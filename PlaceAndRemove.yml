@@ -1,0 +1,11 @@
+---
+- HOSTS: 192.168.6.131
+    TASKS:
+        -Name: Create File
+         File:
+         Path: /tmp/yallo
+         state: touch
+        -Name: Delete File
+         File:
+         Path: /tmp/yallo
+         state: absent
